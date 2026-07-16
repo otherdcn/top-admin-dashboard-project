@@ -148,8 +148,8 @@ img {
 
   padding: 10px;
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
-  /*grid-template: minmax(350px,500px) minmax(350px,500px) / 3fr 1fr;*/
+  /*grid-template: 1fr 1fr / 3fr 1fr;*/
+  grid-template: 400px 400px / 3fr 1fr;
   grid-gap: 5px;
 }
 
@@ -178,6 +178,7 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 15px;
+  overflow: auto;
 }
 
 .project-card {
@@ -217,11 +218,11 @@ img {
 }
 
 .announcements {
+  background-color: yellow;
   padding: 10px;
-  border: 1px solid black;
   border-radius: 10px;
-  /*max-height: 90%;
-  overflow: auto;*/
+  max-height: 90%;
+  overflow: auto;
 }
 
 .announcement-card {
