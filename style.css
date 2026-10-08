@@ -23,7 +23,29 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5 {
-  font-size: inherit;
+  font-family: "Cantata One", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 0.85em;
+  font-weight: lighter;
+}
+
+p, .project-new-btn, .project-upload-btn, .project-share-btn {
+  font-family: "Jost", sans-serif;
   font-weight: inherit;
 }
 
@@ -146,6 +168,17 @@ img {
   grid-row: 2;
 }
 
+.user-name-text, .user-greeting-text {
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.user-greeting-text {
+  font-size: 1.3em;
+  #font-weight: bold;
+}
+
 .project-actions-area {
   padding: 3px;
   display: grid;
@@ -179,6 +212,9 @@ img {
   color: var(--colour-2);
   text-decoration: none;
   display: block;
+
+  font-family: "Jost", sans-serif;
+  font-size: 1.5em
 }
 
 .sidebar li {
@@ -333,6 +369,11 @@ img {
 .project-card-simple .user-name-other {
   grid-row: 1;
   grid-column: 2;
+}
+
+.user-name-other {
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 1.4em;
 }
 
 .project-card-simple .other-project-title {
