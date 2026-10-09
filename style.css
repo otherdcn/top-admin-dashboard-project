@@ -3,11 +3,12 @@
 :root {
   line-height: 1.5;
   box-sizing: border-box;
-  font-family: mono, sans-serif;
+  font-family: "Jost", mono, sans-serif;
   --colour-1: #1992d4;
   --colour-2: #ffffff;
   --colour-3: #e2e8f0;
   --colour-4: #f0b429;
+  --colour-grey-text: grey;
 
 }
 
@@ -23,7 +24,6 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Cantata One", serif;
   font-weight: bold;
 }
 
@@ -44,7 +44,7 @@ h4 {
   font-weight: lighter;
 }
 
-p, .project-new-btn, .project-upload-btn, .project-share-btn {
+.project-new-btn, .project-upload-btn, .project-share-btn {
   font-family: "Jost", sans-serif;
   font-weight: inherit;
 }
@@ -169,8 +169,12 @@ img {
 }
 
 .user-name-text, .user-greeting-text {
-  font-family: "Smooch Sans", sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.user-actions-area-container .user-name-text {
+  font-size: 1.4em;
   font-weight: bold;
 }
 
@@ -213,7 +217,6 @@ img {
   text-decoration: none;
   display: block;
 
-  font-family: "Jost", sans-serif;
   font-size: 1.5em
 }
 
@@ -309,6 +312,14 @@ img {
   right: 15px;
 }
 
+.project-card h3 {
+  font-weight: normal;
+}
+
+.project-card .description {
+  color: var(--colour-grey-text);
+}
+
 .site-announcements {
   grid-row: 1;
   grid-column: 2;
@@ -336,6 +347,13 @@ img {
   border-bottom: 1px solid black;
 }
 
+.announcement-card h3 {
+  font-weight: normal;
+}
+
+.announcement-card .description{
+  color: var(--colour-grey-text);
+}
 .trending-projects {
   grid-row: 2;
   grid-column: 2;
@@ -375,11 +393,15 @@ img {
 }
 
 .user-name-other {
-  font-family: "Smooch Sans", sans-serif;
-  font-size: 1.4em;
+  font-weight: bolder;
 }
+
 
 .project-card-simple .other-project-title {
   grid-row: 2;
   grid-column: 2;
+}
+
+.other-project-title {
+  color: var(--colour-grey-text);
 }
